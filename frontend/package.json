@@ -45,6 +45,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "parcel": "^2.15.2",
     "tw-animate-css": "^1.3.0"
   }
 }
