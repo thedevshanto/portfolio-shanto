@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useRef, useEffect, useState } from 'react';
 
 // components
@@ -29,6 +29,7 @@ const Contact = () => {
     if (state.succeeded) {
       toast.success('Message sent successfully! 🎉', {
         position: 'top-right',
+        autoClose: 3000,
         theme: 'dark',
       });
 
@@ -53,8 +54,6 @@ const Contact = () => {
       }}
       className="h-full flex items-center"
     >
-      <ToastContainer />
-
       <div className="container mx-auto w-full max-h-[80vh] py-10 flex flex-col items-center xl:justify-center xl:overflow-hidden scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible">
         <div className="w-full">
           <div className="flex flex-col xl:flex-row gap-6">

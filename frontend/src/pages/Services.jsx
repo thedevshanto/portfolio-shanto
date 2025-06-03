@@ -85,7 +85,7 @@ const Services = () => {
             return (
               <SwiperSlide key={index}>
                 <div className="bg-secondary/90 w-full h-[284px] px-[30px] py-[40px] flex flex-col justify-between rounded-2xl ">
-                  <div className='flex items-center justify-between mb-12'>
+                  <div className="flex items-center justify-between mb-12">
                     <OptimizedImage
                       src={service.icon}
                       alt=""
@@ -96,7 +96,7 @@ const Services = () => {
                       <MdOutlineArrowOutward />
                     </div>
                   </div>
-                  <h5 className='text-[22px] font-medium max-w-240px'>
+                  <h5 className="text-[22px] font-medium max-w-240px">
                     {service.title}
                   </h5>
                 </div>
