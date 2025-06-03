@@ -131,9 +131,9 @@ const MyWorks = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
       }}
-      className="min-h-screen flex items-center py-16 xl:py-0 "
+      className="h-full flex items-center py-16 xl:py-0 "
     >
-      <div className="container mx-auto w-full h-full flex flex-col justify-center">
+      <div className="container mx-auto w-full flex flex-col justify-center">
         {/* heading */}
         <h2 className="h2 mb-6 xl:mb-12 max-w-[600px]">
           My Latest <span className="text-accent">Work</span>

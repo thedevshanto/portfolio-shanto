@@ -17,7 +17,7 @@ import {
 
 const Header = () => {
   return (
-    <header className="2xl:hidden absolute z-40 left-0 top-00 right-0">
+    <header className="2xl:hidden relative w-full z-40  top-0">
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-6">
           {/* logo */}

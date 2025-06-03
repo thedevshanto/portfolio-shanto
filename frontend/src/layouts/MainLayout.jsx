@@ -7,29 +7,22 @@ import Gradient from '@/components/Gradient';
 import RectangleTransition from '@/components/transitions/RectangleTransition';
 import Header from '@/components/Header';
 
-
 const MainLayout = () => {
   const location = useLocation();
   return (
-    <>
-      {/* <Gradient /> */}
-      <Gradient />
-      {/* <RectangleTransition /> */}
-      <RectangleTransition />
-      <PageTransition location={location}>
-        <div className="flex">
-          <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
-            <MainNav />
-          </div>
-          <div className="w-full max-w-[1130px] mx-auto px-[15px]">
-            <Header />
-            <div>
-              <Outlet />
-            </div>
-          </div>
+    <PageTransition location={location}>
+      <div className="flex">
+        <MainNav />
+        <div className="min-h-[calc(100vh_-_93.5px)] w-full max-w-[1130px] mx-auto px-[15px]">
+          <Header />
+          <Outlet />
+          {/* <Gradient /> */}
+          <Gradient />
+          {/* <RectangleTransition /> */}
+          <RectangleTransition />
         </div>
-      </PageTransition>
-    </>
+      </div>
+    </PageTransition>
   );
 };
 
